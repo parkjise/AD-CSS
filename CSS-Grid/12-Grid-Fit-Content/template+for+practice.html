@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CSS Grid</title>
+		<style>
+			body {
+				font-family: Arial, Helvetica, sans-serif;
+				color: rgb(255, 255, 255);
+				font-size: large;
+			}
+
+			.container {
+				background: rgb(207, 207, 207);
+				width: 700px;
+				margin: 50px auto 0;
+				display: grid;
+				grid-template-columns: fit-content(200px) fit-content(400px) 1fr;
+				grid-template-rows: repeat(2, MinMax(200px, min-content));
+			}
+
+			.item {
+				padding: 7px;
+			}
+
+			.item1 {
+				background: red;
+			}
+
+			.item2 {
+				background: orange;
+			}
+
+			.item3 {
+				background: green;
+			}
+
+			.item4 {
+				background: rgb(69, 2, 177);
+			}
+
+			.item5 {
+				background: blue;
+			}
+
+			.item6 {
+				background: purple;
+			}
+
+			.item6 {
+				background: rgb(129, 3, 62);
+			}
+		</style>
+	</head>
+
+	<body>
+		<h1 style="color: black">CSS Grid CSS Grid Order Property</h1>
+		<div class="container">
+			<div class="item item1">
+				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores,
+				ullam.
+			</div>
+			<div class="item item2">
+				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga in ut,
+				consectetur blanditiis cumque illo. Pariatur deleniti consequuntur quod
+				magnam quas obcaecati quidem rem sit sapiente quibusdam assumenda fuga
+				recusandae, quis ab? Assumenda beatae enim odio tenetur, dolore quasi.
+				Earum!
+			</div>
+			<div class="item item3">Third</div>
+			<div class="item item4">Fourth</div>
+			<div class="item item5">Fifth</div>
+			<div class="item item6">Sixth</div>
+		</div>
+	</body>
+</html>

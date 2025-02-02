@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desccendant Selector</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #box {
+            border: 2px solid black;
+            padding: 10px;
+        }
+
+        #box p {
+            color: red;
+        }
+
+        div p span {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Desccendant Selector </h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias perferendis corrupti sapiente earum!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias perferendis corrupti sapiente earum!</p>
+
+    <div id="box">
+        <span>Hello</span>
+        <p>Lorem <span>ipsum ,sit amet</span> consectetur adipisicing elit. Velit, voluptates.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    </div>
+</body>
+
+</html>

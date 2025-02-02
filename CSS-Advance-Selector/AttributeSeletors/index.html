@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Attribute Selectors</title>
+    <style>
+        body {
+            font-family: arial;
+        }
+
+        p {
+            font-size: 19px;
+            line-height: 25px;
+        }
+
+        /* img[title] {
+            border: 3px solid red;
+        }
+
+        a[target] {
+            color: red;
+        } */
+        /* input[type="text"] {
+            border: 3px solid red;
+        }
+
+        img[src="cat.jpg"] {
+            border: 3px solid red;
+        } */
+        /* img[src^="cat"] {
+            border: 3px solid red;
+        } */
+        /* img[alt|="Image"] {
+            border: 3px solid red;
+        } */
+        /* a[href$=".jpg"] {
+            color: red;
+        } */
+        /* a[target*="an"] {
+            color: red;
+        } */
+        img[alt~='of'] {
+            /* color: red; */
+            border: 3px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> CSS Attribute Selectors</h1>
+
+    <img src="cat.jpg" width="200px" alt="Image of cat">
+
+    <p>Lorem <a href="">ipsum dolor</a> sit amet, consectetur adipisicing elit. Dolore, tempora minus! Illum totam iure
+        <a href="www.google.com" target="_blank">laborum</a> maxime? Libero illo ad eos vel quam veniam facilis,
+        commodi inventore recusandae officiis nulla a, nisi corrupti adipisci explicabo praesentium nobis unde
+        reprehenderit quas sequi, quia aliquid placeat culpa! <a href="cat.jpg">Voluptate omnis</a> delectus
+        optio repellendus nihil?
+    </p>
+
+    <img src="tiger.jpg" title="tiger" width="200px" alt="Image oftiger">
+    <br><br>
+
+    Name <input type="text"> <br><br>
+
+    Gender <input type="radio"> Male <input type="radio"> Female <br><br>
+
+    Address <input type="text"> <br><br>
+
+    Password <input type="password"> <br><br>
+
+</body>
+
+</html>
