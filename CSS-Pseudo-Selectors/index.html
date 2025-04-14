@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo-Classes Selectors</title>
+    <style>
+        body {
+            font: 19px/25px arial;
+            padding: 10px 0 0 20px;
+        }
+        /* li:first-child{
+            color: red;
+        } */
+        /* li:last-child{
+            color: red;
+        } */
+        /* #list li:last-child{
+            color: red;
+        } */
+        /* li:nth-child(2n){
+            color: red;
+        } */
+        /* li:nth-last-child(2){
+            color: red;
+        } */
+        /* p:nth-of-type(2){
+            color: red;
+        } */
+        /* p:nth-last-of-type(2){
+            color: red;
+        } */
+        li:only-child{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Pseudo-Classes Selectors</h1>
+    <ul id="list">
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        
+        
+    </ul>
+    
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ipsa deleniti totam sit quasi explicabo!</p>
+    <p class="test">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ipsa deleniti totam sit quasi
+        explicabo!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ipsa deleniti totam sit quasi explicabo!</p>
+
+    <ul id="list-two">
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+    </ul>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore perspiciatis, quibusdam eaque ut officiis odit!
+    </p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore perspiciatis, quibusdam eaque ut officiis odit!
+    </p>
+</body>
+
+</html>
